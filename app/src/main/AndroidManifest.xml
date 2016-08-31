@@ -25,6 +25,10 @@
             android:name=".scroll.ScrollActivity"
             android:label="scroll"
             android:theme="@style/AppThemeBlue"></activity>
+
+        <activity android:name=".toolbartab.ToolbarTabActivity"
+            android:label="toolbar_tab"
+            android:theme="@style/AppThemeBlue"></activity>
     </application>
 
 </manifest>

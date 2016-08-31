@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 import com.fish.behaviordemo.fab.FabSnackActivity;
 import com.fish.behaviordemo.scroll.ScrollActivity;
+import com.fish.behaviordemo.toolbartab.ToolbarTabActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ScrollActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.toolbar_tab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ToolbarTabActivity.class);
                 startActivity(intent);
             }
         });
