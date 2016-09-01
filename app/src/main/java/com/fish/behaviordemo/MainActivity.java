@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
 
 import com.fish.behaviordemo.fab.FabSnackActivity;
 import com.fish.behaviordemo.scroll.ScrollActivity;
@@ -18,7 +19,7 @@ import com.fish.behaviordemo.toolbartab.ToolbarTabActivity;
 public class MainActivity extends AppCompatActivity {
 
     AppBarLayout appBar;
-
+    CheckBox enterAlwaysCb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        enterAlwaysCb = (CheckBox) findViewById(R.id.enterAlways);
+
         findViewById(R.id.fab_snack).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.scroll).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainActivity.this, ScrollActivity.class);
+                intent.putExtra(ScrollActivity.ENTERALWAYS,enterAlwaysCb.isChecked());
                 startActivity(intent);
             }
         });

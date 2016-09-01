@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -16,11 +17,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="fabSnack" />
-    <Button
-        android:id="@+id/scroll"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="scroll" />
+        android:background="#d9d9d9"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/enterAlways"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enterAlways" />
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scroll" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/toolbar_tab"
         android:layout_width="wrap_content"

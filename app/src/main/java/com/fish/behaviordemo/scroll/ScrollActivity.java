@@ -1,6 +1,7 @@
 package com.fish.behaviordemo.scroll;
 
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +20,12 @@ import com.fish.behaviordemo.R;
  */
 public class ScrollActivity extends AppCompatActivity {
 
+    public static final String ENTERALWAYS="enterAlways";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scroll_activity);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -43,6 +46,13 @@ public class ScrollActivity extends AppCompatActivity {
             tv.setText("" + i);
             tv.setTextSize(40);
             ll.addView(tv);
+        }
+
+        boolean enterAlways=getIntent().getBooleanExtra(ScrollActivity.ENTERALWAYS,true);
+        AppBarLayout.LayoutParams params= (AppBarLayout.LayoutParams) toolbar.getLayoutParams();
+
+        if(!enterAlways){
+            params.setScrollFlags(params.getScrollFlags()&~AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS);
         }
 
     }

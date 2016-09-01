@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways" />
             <!--app:layout_scrollFlags="scroll" />-->
