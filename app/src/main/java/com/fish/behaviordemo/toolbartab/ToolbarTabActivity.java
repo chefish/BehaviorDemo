@@ -20,7 +20,7 @@ public class ToolbarTabActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_part_three);
+        setContentView(R.layout.toolbartab_activity);
 
         initToolbar();
         initViewPagerAndTabs();

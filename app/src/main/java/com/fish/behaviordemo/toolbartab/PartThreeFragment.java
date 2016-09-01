@@ -31,7 +31,7 @@ public class PartThreeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(
-                R.layout.fragment_part_three, container, false);
+                R.layout.toolbartab_fragment, container, false);
         setupRecyclerView(recyclerView);
         return recyclerView;
     }
