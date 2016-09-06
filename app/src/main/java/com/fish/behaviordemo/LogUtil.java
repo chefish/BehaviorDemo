@@ -15,14 +15,9 @@ public class LogUtil {
         Log.d(TAG, s);
     }
 
-    /**
-     * 为了满足YX的习惯
-     * LogUtil.fish("s" + deltaY)==true 调试打日志，非常有用
-     * @param s
-     */
-    public static boolean fish(String s) {
+
+    public static void fish(String s) {
         Log.d(TAG, s);
-        return false;
     }
 
     public static void d(boolean b)

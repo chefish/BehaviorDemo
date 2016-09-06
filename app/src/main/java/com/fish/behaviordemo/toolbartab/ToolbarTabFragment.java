@@ -15,12 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class PartThreeFragment extends Fragment {
+public class ToolbarTabFragment extends Fragment {
 
-    public final static String ITEMS_COUNT_KEY = "PartThreeFragment$ItemsCount";
+    public final static String ITEMS_COUNT_KEY = "ToolbarTabFragment$ItemsCount";
 
-    public static PartThreeFragment createInstance(int itemsCount) {
-        PartThreeFragment partThreeFragment = new PartThreeFragment();
+    public static ToolbarTabFragment createInstance(int itemsCount) {
+        ToolbarTabFragment partThreeFragment = new ToolbarTabFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(ITEMS_COUNT_KEY, itemsCount);
         partThreeFragment.setArguments(bundle);

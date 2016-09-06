@@ -36,8 +36,8 @@ public class ToolbarTabActivity extends AppCompatActivity {
     private void initViewPagerAndTabs() {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
-        pagerAdapter.addFragment(PartThreeFragment.createInstance(20), "作家");
-        pagerAdapter.addFragment(PartThreeFragment.createInstance(4), "书");
+        pagerAdapter.addFragment(ToolbarTabFragment.createInstance(20), "作家");
+        pagerAdapter.addFragment(ToolbarTabFragment.createInstance(4), "书");
         viewPager.setAdapter(pagerAdapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
