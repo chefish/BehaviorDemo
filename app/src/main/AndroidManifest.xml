@@ -32,14 +32,16 @@
             android:theme="@style/AppThemeBlue"></activity>
 
         <activity
-            android:name=".collapsing.CollapsingActivity"
-            android:label="collapsing"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <activity
             android:name=".appbar.AppbarActivity"
             android:label="appbar"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".collapsing.CollapsingActivity"
+            android:label="collapsing"
+            android:theme="@style/AppThemeBlue"></activity>
+
+
     </application>
 
 </manifest>

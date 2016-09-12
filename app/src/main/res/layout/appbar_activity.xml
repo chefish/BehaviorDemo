@@ -26,7 +26,7 @@
         <TextView
             android:gravity="center"
             app:layout_scrollFlags="scroll"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="下滑最后出现"
             android:background="#447700"
             android:layout_width="match_parent"
@@ -36,7 +36,7 @@
         <TextView
             android:gravity="center"
             app:layout_scrollFlags="scroll|enterAlways"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="下滑立刻出现"
             android:background="#004477"
             android:layout_width="match_parent"
@@ -45,7 +45,7 @@
 
         <TextView
             android:gravity="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="无法滑出去"
             android:background="#ff0000"
             android:layout_width="match_parent"

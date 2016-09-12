@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fish.behaviordemo.MainActivity">
+
+    <item
+        android:id="@+id/action_coll"
+        android:title="action_coll"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/scroll"
+                    android:title="scroll(default)" />
+                <item
+                    android:id="@+id/scroll_exit"
+                    android:title="scroll_exit" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
