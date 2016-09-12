@@ -26,13 +26,20 @@
             android:label="scroll"
             android:theme="@style/AppThemeBlue"></activity>
 
-        <activity android:name=".toolbartab.ToolbarTabActivity"
+        <activity
+            android:name=".toolbartab.ToolbarTabActivity"
             android:label="toolbar_tab"
             android:theme="@style/AppThemeBlue"></activity>
 
-        <activity android:name=".collapsing.CollapsingActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="collapsing"></activity>
+        <activity
+            android:name=".collapsing.CollapsingActivity"
+            android:label="collapsing"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".appbar.AppbarActivity"
+            android:label="appbar"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CheckBox;
 
+import com.fish.behaviordemo.appbar.AppbarActivity;
 import com.fish.behaviordemo.collapsing.CollapsingActivity;
 import com.fish.behaviordemo.fab.FabSnackActivity;
 import com.fish.behaviordemo.scroll.ScrollActivity;
@@ -50,28 +51,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        addClick(R.id.fab_snack, FabSnackActivity.class);
         findViewById(R.id.scroll).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, ScrollActivity.class);
-                intent.putExtra(ScrollActivity.ENTERALWAYS,enterAlwaysCb.isChecked());
+                intent.putExtra(ScrollActivity.ENTERALWAYS, enterAlwaysCb.isChecked());
                 startActivity(intent);
             }
         });
+        addClick(R.id.toolbar_tab, ToolbarTabActivity.class);
+        addClick(R.id.appbar, AppbarActivity.class);
+        addClick(R.id.collapsing, CollapsingActivity.class);
 
-        findViewById(R.id.toolbar_tab).setOnClickListener(new View.OnClickListener() {
+
+    }
+
+    void addClick(int id, final Class clazz) {
+        findViewById(id).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ToolbarTabActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        findViewById(R.id.collapsing).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CollapsingActivity.class);
+                Intent intent = new Intent(MainActivity.this, clazz);
                 startActivity(intent);
             }
         });
