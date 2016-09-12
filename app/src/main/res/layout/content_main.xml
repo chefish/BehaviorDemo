@@ -56,4 +56,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="collapsing"/>
+    <Button
+        android:id="@+id/collapsing_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="collapsing_image"/>
 </LinearLayout>

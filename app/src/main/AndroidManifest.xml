@@ -40,7 +40,7 @@
             android:name=".collapsing.CollapsingActivity"
             android:label="collapsing"
             android:theme="@style/AppThemeBlue"></activity>
-
+        <activity android:name=".collapsing.CollapsingImageActivity"></activity>
 
     </application>
 
