@@ -29,6 +29,10 @@
         <activity android:name=".toolbartab.ToolbarTabActivity"
             android:label="toolbar_tab"
             android:theme="@style/AppThemeBlue"></activity>
+
+        <activity android:name=".collapsing.CollapsingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="collapsing"></activity>
     </application>
 
 </manifest>

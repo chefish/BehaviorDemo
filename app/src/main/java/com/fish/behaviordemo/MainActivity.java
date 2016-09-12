@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CheckBox;
 
+import com.fish.behaviordemo.collapsing.CollapsingActivity;
 import com.fish.behaviordemo.fab.FabSnackActivity;
 import com.fish.behaviordemo.scroll.ScrollActivity;
 import com.fish.behaviordemo.toolbartab.ToolbarTabActivity;
@@ -63,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ToolbarTabActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.collapsing).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CollapsingActivity.class);
                 startActivity(intent);
             }
         });
