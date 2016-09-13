@@ -9,9 +9,8 @@
 
     <!--这里必须要写fitsSystemWindows，不然上滑会出现statusbar占2份高度问题-->
     <android.support.design.widget.AppBarLayout
-        android:fitsSystemWindows="true"
         android:layout_width="match_parent"
-        app:statusBarScrim="@android:color/transparent"
+        android:fitsSystemWindows="true"
         android:layout_height="256dp">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -21,7 +20,6 @@
             app:layout_scrollFlags="scroll">
 
             <android.support.v7.widget.Toolbar
-                app:layout_collapseMode="pin"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"

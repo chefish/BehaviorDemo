@@ -20,5 +20,11 @@
         </menu>
     </item>
 
+    <item
+        android:id="@+id/toolbar_pin"
+        android:title="toolbar_pin"
+        app:showAsAction="never">
+
+    </item>
 
 </menu>

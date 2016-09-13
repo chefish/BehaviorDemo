@@ -20,6 +20,8 @@ import com.fish.behaviordemo.ToastUtil;
 public class CollapsingActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     COLLASP_MODE currentMode;
+    Toolbar toolbar;
+    boolean toolbarPinned;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class CollapsingActivity extends AppCompatActivity {
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -71,6 +73,12 @@ public class CollapsingActivity extends AppCompatActivity {
                 break;
 
         }
+
+        if (toolbarPinned) {
+            menu.findItem(R.id.toolbar_pin).setTitle("toolbar_pin_cancel");
+        } else {
+            menu.findItem(R.id.toolbar_pin).setTitle("toolbar_pin");
+        }
         return true;
     }
 
@@ -97,6 +105,19 @@ public class CollapsingActivity extends AppCompatActivity {
             collapsingToolbarLayout.setLayoutParams(params);
             ToastUtil.showToast(this, "scroll");
             return true;
+        } else if (id == R.id.toolbar_pin) {
+            toolbarPinned = !toolbarPinned;
+
+            CollapsingToolbarLayout.LayoutParams params = (CollapsingToolbarLayout.LayoutParams) toolbar.getLayoutParams();
+            if (toolbarPinned) {
+                params.setCollapseMode(CollapsingToolbarLayout.LayoutParams.COLLAPSE_MODE_PIN);
+            } else {
+                params.setCollapseMode(CollapsingToolbarLayout.LayoutParams.COLLAPSE_MODE_OFF);
+            }
+
+            toolbar.setLayoutParams(params);
+            toolbar.requestLayout();
+            ToastUtil.showToast(this, "toolbarPinned " + toolbarPinned);
         }
 
         return super.onOptionsItemSelected(item);
