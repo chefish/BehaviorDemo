@@ -13,8 +13,10 @@ import android.view.MenuItem;
 import android.widget.CheckBox;
 
 import com.fish.behaviordemo.appbar.AppbarActivity;
+import com.fish.behaviordemo.collapsing.CollapsImageActivity3;
 import com.fish.behaviordemo.collapsing.CollapsingActivity;
-import com.fish.behaviordemo.collapsing.CollapsingImageActivity;
+import com.fish.behaviordemo.collapsing.CollapsImageActivity;
+import com.fish.behaviordemo.collapsing.CollapsImageActivity2;
 import com.fish.behaviordemo.fab.FabSnackActivity;
 import com.fish.behaviordemo.scroll.ScrollActivity;
 import com.fish.behaviordemo.toolbartab.ToolbarTabActivity;
@@ -66,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
         addClick(R.id.toolbar_tab, ToolbarTabActivity.class);
         addClick(R.id.appbar, AppbarActivity.class);
         addClick(R.id.collapsing, CollapsingActivity.class);
-        addClick(R.id.collapsing_image, CollapsingImageActivity.class);
+        addClick(R.id.collapsing_image1, CollapsImageActivity.class);
+        addClick(R.id.collapsing_image2, CollapsImageActivity2.class);
+        addClick(R.id.collapsing_image3, CollapsImageActivity3.class);
 
 
     }

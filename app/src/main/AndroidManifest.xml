@@ -40,8 +40,19 @@
             android:name=".collapsing.CollapsingActivity"
             android:label="collapsing"
             android:theme="@style/AppThemeBlue"></activity>
-        <activity android:name=".collapsing.CollapsingImageActivity"></activity>
-
+        <activity
+            android:name=".collapsing.CollapsImageActivity"
+            android:label="CollapsingImage"></activity>
+        <activity
+            android:name=".collapsing.CollapsImageActivity2"
+            android:label="CollapsImageActivity2"
+            android:theme="@style/AppTheme.NoActionBar">>
+        </activity>
+        <activity
+            android:name=".collapsing.CollapsImageActivity3"
+            android:label="CollapsImageActivity3"
+            android:theme="@style/AppTheme.NoActionBar">>
+        </activity>
     </application>
 
 </manifest>

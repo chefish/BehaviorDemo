@@ -16,15 +16,17 @@ import android.widget.TextView;
 import com.fish.behaviordemo.R;
 import com.fish.behaviordemo.ToastUtil;
 
-
-public class CollapsingImageActivity extends AppCompatActivity {
+/**
+ * 刚进去ImageView就占据了状态栏
+ */
+public class CollapsImageActivity3 extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     COLLASP_MODE currentMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collapsing_image_activity);
+        setContentView(R.layout.collapsing_image_activity3);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
 
