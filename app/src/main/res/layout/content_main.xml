@@ -31,10 +31,10 @@
             android:text="enterAlways" />
 
         <Button
-            android:layout_marginLeft="30dp"
             android:id="@+id/scroll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:text="scroll" />
 
     </LinearLayout>
@@ -44,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="toolbar_tab" />
+
     <Button
         android:id="@+id/appbar"
         android:layout_width="wrap_content"
@@ -55,21 +56,29 @@
         android:id="@+id/collapsing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="collapsing"/>
+        android:text="collapsing" />
+
     <Button
         android:id="@+id/collapsing_image1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="collapsing_image1"/>
+        android:text="collapsing_image1" />
 
     <Button
         android:id="@+id/collapsing_image2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="collapsing_image2"/>
+        android:text="collapsing_image2" />
+
     <Button
         android:id="@+id/collapsing_image3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="collapsing_image3"/>
+        android:text="collapsing_image3" />
+
+    <Button
+        android:id="@+id/anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="anchor" />
 </LinearLayout>

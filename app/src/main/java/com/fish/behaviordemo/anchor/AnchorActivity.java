@@ -1,4 +1,4 @@
-package com.fish.behaviordemo.collapsing;
+package com.fish.behaviordemo.anchor;
 
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -17,16 +17,16 @@ import com.fish.behaviordemo.R;
 import com.fish.behaviordemo.ToastUtil;
 
 /**
- * 状态栏透明
+ * 由CollapsImageActivity3进化得到
  */
-public class CollapsImageActivity2 extends AppCompatActivity {
+public class AnchorActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     COLLASP_MODE currentMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collapsing_image_activity);
+        setContentView(R.layout.anchor_activity);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
 
@@ -54,6 +54,7 @@ public class CollapsImageActivity2 extends AppCompatActivity {
         currentMode = COLLASP_MODE.SCROLL_DEFAULT;
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -54,54 +54,11 @@ public class CollapsImageActivity3 extends AppCompatActivity {
         currentMode = COLLASP_MODE.SCROLL_DEFAULT;
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_collapsing, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        switch (currentMode) {
-            case SCROLL_DEFAULT:
-                menu.findItem(R.id.scroll).setChecked(true);
-                break;
-            case SCROLL_EXIT_COLLAPSE:
-                menu.findItem(R.id.scroll_exit).setChecked(true);
-                break;
-
-        }
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.scroll_exit) {
-            currentMode = COLLASP_MODE.SCROLL_EXIT_COLLAPSE;
-            AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams) collapsingToolbarLayout.getLayoutParams();
-            params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL | AppBarLayout.LayoutParams.SCROLL_FLAG_EXIT_UNTIL_COLLAPSED);
-            collapsingToolbarLayout.setLayoutParams(params);
-            ToastUtil.showToast(this, "scroll_exit_collapse");
-            return true;
-
-        } else if (id == R.id.scroll) {
-            currentMode = COLLASP_MODE.SCROLL_DEFAULT;
-            AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams) collapsingToolbarLayout.getLayoutParams();
-            params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL);
-            collapsingToolbarLayout.setLayoutParams(params);
-            ToastUtil.showToast(this, "scroll");
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     static enum COLLASP_MODE {SCROLL_DEFAULT, SCROLL_EXIT_COLLAPSE}

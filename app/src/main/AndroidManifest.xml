@@ -53,6 +53,8 @@
             android:label="CollapsImageActivity3"
             android:theme="@style/AppTheme.NoActionBar">>
         </activity>
+        <activity android:name=".anchor.AnchorActivity"
+            android:label="AnchorActivity"></activity>
     </application>
 
 </manifest>
