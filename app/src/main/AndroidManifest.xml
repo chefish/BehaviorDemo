@@ -60,6 +60,8 @@
             android:name=".zhihu.ZhihuCplusActivity"
             android:label="ZhCplusActivity"
             android:theme="@style/AppThemeBlue"></activity>
+        <activity android:name=".collapsing.CollapsImageActivity4"
+            android:label="CollapsingImage4"></activity>
     </application>
 
 </manifest>

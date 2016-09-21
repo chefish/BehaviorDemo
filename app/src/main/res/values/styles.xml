@@ -23,5 +23,7 @@
         <item name="colorPrimaryDark">@color/color_primary_blue_dark</item>
         <item name="colorAccent">@color/color_accent_pink</item>
     </style>
-
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+    </style>
 </resources>

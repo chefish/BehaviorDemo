@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BehaviorDemo</string>
     <string name="action_settings">Settings</string>
+    <string name="example_title">This is an awesome title</string>
+    <string name="example_subtitle">I\'m a cool subtitle, larger than the title</string>
+
 </resources>
