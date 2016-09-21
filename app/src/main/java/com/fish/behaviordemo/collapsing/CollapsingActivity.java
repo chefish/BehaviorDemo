@@ -14,7 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.fish.behaviordemo.R;
-import com.fish.behaviordemo.ToastUtil;
+import com.fish.behaviordemo.util.Constant;
+import com.fish.behaviordemo.util.ToastUtil;
 
 
 public class CollapsingActivity extends AppCompatActivity {
@@ -47,7 +48,11 @@ public class CollapsingActivity extends AppCompatActivity {
 
         for (int i = 0; i < 30; i++) {
             TextView tv = new TextView(this);
-            tv.setText("" + i);
+            String s=Constant.getName(i);
+            if(s==null){
+                s=""+i;
+            }
+            tv.setText(s);
             tv.setTextSize(40);
             ll.addView(tv);
         }

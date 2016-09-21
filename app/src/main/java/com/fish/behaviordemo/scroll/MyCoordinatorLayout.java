@@ -4,7 +4,7 @@ import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 
-import com.fish.behaviordemo.LogUtil;
+import com.fish.behaviordemo.util.LogUtil;
 
 /**
  * Created by fish on 16/8/25.

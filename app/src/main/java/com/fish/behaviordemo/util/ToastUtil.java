@@ -1,4 +1,4 @@
-package com.fish.behaviordemo;
+package com.fish.behaviordemo.util;
 
 import android.content.Context;
 import android.widget.Toast;

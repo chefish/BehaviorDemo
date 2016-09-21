@@ -1,4 +1,4 @@
-package com.fish.behaviordemo;
+package com.fish.behaviordemo.util;
 
 import android.util.Log;
 
