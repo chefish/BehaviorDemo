@@ -46,15 +46,20 @@
         <activity
             android:name=".collapsing.CollapsImageActivity2"
             android:label="CollapsImageActivity2"
-            android:theme="@style/AppTheme.NoActionBar">>
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".collapsing.CollapsImageActivity3"
             android:label="CollapsImageActivity3"
-            android:theme="@style/AppTheme.NoActionBar">>
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".anchor.AnchorActivity"
+        <activity
+            android:name=".anchor.AnchorActivity"
             android:label="AnchorActivity"></activity>
+        <activity
+            android:name=".zhihu.ZhCplusActivity"
+            android:label="ZhCplusActivity"
+            android:theme="@style/AppThemeBlue"></activity>
     </application>
 
 </manifest>
