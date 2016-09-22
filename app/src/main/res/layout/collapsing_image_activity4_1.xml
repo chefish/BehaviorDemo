@@ -8,13 +8,11 @@
     android:layout_height="match_parent"
     tools:context="com.fish.behaviordemo.MainActivity">
 
-    <!--加了56dp-->
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="256dp">
 
-        <!--加上56dp的paddingBottom-->
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbarLayout"
             android:layout_width="match_parent"
