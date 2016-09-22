@@ -2,6 +2,7 @@ package com.fish.behaviordemo.collapsing;
 
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,17 +18,18 @@ import com.fish.behaviordemo.util.Constant;
 /**
  * 参考
  * saulmm.coordinatorexamples.IOActivityExample
+ *
  */
 public class CollapsImageActivity4 extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
-
+    CoordinatorLayout root;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.collapsing_image_activity4);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
-
+        root= (CoordinatorLayout) findViewById(R.id.root);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
