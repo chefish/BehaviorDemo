@@ -45,13 +45,14 @@ public class CollapsImageActivity4 extends AppCompatActivity {
 
         LinearLayout ll = (LinearLayout) findViewById(R.id.linear);
 
+
         for (int i = 0; i < 30; i++) {
             TextView tv = new TextView(this);
-            String s = Constant.getName(i);
-            if (s == null) {
-                s = "" + i;
+            String s= Constant.getName(i);
+            if(s==null){
+                s=""+i;
             }
-            tv.setText("" + i);
+            tv.setText(s);
             tv.setTextSize(40);
             ll.addView(tv);
         }
