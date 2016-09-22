@@ -2,6 +2,7 @@ package com.fish.behaviordemo.collapsing;
 
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -14,17 +15,19 @@ import android.widget.TextView;
 import com.fish.behaviordemo.R;
 import com.fish.behaviordemo.util.Constant;
 
-
-public class CollapsImageActivity extends AppCompatActivity {
+/**
+ *
+ */
+public class CollapsFitSystemActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
-
+    CoordinatorLayout root;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collapsing_image_activity);
+        setContentView(R.layout.collapsing_fit_system_activity);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
-
+        root= (CoordinatorLayout) findViewById(R.id.root);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -42,9 +45,9 @@ public class CollapsImageActivity extends AppCompatActivity {
 
         for (int i = 0; i < 30; i++) {
             TextView tv = new TextView(this);
-            String s= Constant.getName(i);
-            if(s==null){
-                s=""+i;
+            String s = Constant.getName(i);
+            if (s == null) {
+                s = "" + i;
             }
             tv.setText(s);
             tv.setTextSize(40);

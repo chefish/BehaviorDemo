@@ -77,6 +77,12 @@
         android:text="collapsing_image3" />
 
     <Button
+        android:id="@+id/collapsing_fit_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="collapsing_fit_system" />
+
+    <Button
         android:id="@+id/collapsing_image4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,6 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="anchor" />
+
     <Button
         android:id="@+id/zhihuplus"
         android:layout_width="wrap_content"

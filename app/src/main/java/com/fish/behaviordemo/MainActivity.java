@@ -14,6 +14,7 @@ import android.widget.CheckBox;
 
 import com.fish.behaviordemo.anchor.AnchorActivity;
 import com.fish.behaviordemo.appbar.AppbarActivity;
+import com.fish.behaviordemo.collapsing.CollapsFitSystemActivity;
 import com.fish.behaviordemo.collapsing.CollapsImageActivity3;
 import com.fish.behaviordemo.collapsing.CollapsImageActivity4;
 import com.fish.behaviordemo.collapsing.CollapsingActivity;
@@ -74,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         addClick(R.id.collapsing_image1, CollapsImageActivity.class);
         addClick(R.id.collapsing_image2, CollapsImageActivity2.class);
         addClick(R.id.collapsing_image3, CollapsImageActivity3.class);
+        addClick(R.id.collapsing_fit_system, CollapsFitSystemActivity.class);
+
         addClick(R.id.collapsing_image4, CollapsImageActivity4.class);
 
         addClick(R.id.anchor, AnchorActivity.class);
