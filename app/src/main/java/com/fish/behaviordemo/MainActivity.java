@@ -17,6 +17,7 @@ import com.fish.behaviordemo.appbar.AppbarActivity;
 import com.fish.behaviordemo.collapsing.CollapsFitSystemActivity;
 import com.fish.behaviordemo.collapsing.CollapsImageActivity3;
 import com.fish.behaviordemo.collapsing.CollapsImageActivity4;
+import com.fish.behaviordemo.collapsing.CollapsImageActivity4_1;
 import com.fish.behaviordemo.collapsing.CollapsingActivity;
 import com.fish.behaviordemo.collapsing.CollapsImageActivity;
 import com.fish.behaviordemo.collapsing.CollapsImageActivity2;
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         addClick(R.id.collapsing_fit_system, CollapsFitSystemActivity.class);
 
         addClick(R.id.collapsing_image4, CollapsImageActivity4.class);
+        addClick(R.id.collapsing_image4_1, CollapsImageActivity4_1.class);
 
         addClick(R.id.anchor, AnchorActivity.class);
         addClick(R.id.zhihuplus, ZhihuCplusActivity.class);

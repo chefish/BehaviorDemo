@@ -62,6 +62,8 @@
             android:theme="@style/AppThemeBlue"></activity>
         <activity android:name=".collapsing.CollapsImageActivity4"
             android:label="CollapsingImage4"></activity>
+        <activity android:name=".collapsing.CollapsImageActivity4_1"
+            android:label="CollapsingImage4_1"></activity>
 
         <activity
             android:name=".collapsing.CollapsFitSystemActivity"

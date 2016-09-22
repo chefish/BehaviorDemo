@@ -12,91 +12,110 @@
     tools:context="com.fish.behaviordemo.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <Button
-        android:id="@+id/fab_snack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="fabSnack" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#d9d9d9"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <CheckBox
-            android:id="@+id/enterAlways"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="enterAlways" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/scroll"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="scroll" />
+            <Button
+                android:id="@+id/fab_snack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fabSnack" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d9d9d9"
+                android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/toolbar_tab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="toolbar_tab" />
+                <CheckBox
+                    android:id="@+id/enterAlways"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="enterAlways" />
 
-    <Button
-        android:id="@+id/appbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="appbar" />
+                <Button
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="scroll" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/toolbar_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="toolbar_tab" />
+
+            <Button
+                android:id="@+id/appbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="appbar" />
 
 
-    <Button
-        android:id="@+id/collapsing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="collapsing" />
+            <Button
+                android:id="@+id/collapsing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing" />
 
-    <Button
-        android:id="@+id/collapsing_image1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="collapsing_image1" />
+            <Button
+                android:id="@+id/collapsing_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_image1" />
 
-    <Button
-        android:id="@+id/collapsing_image2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="collapsing_image2" />
+            <Button
+                android:id="@+id/collapsing_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_image2" />
 
-    <Button
-        android:id="@+id/collapsing_image3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="collapsing_image3" />
+            <Button
+                android:id="@+id/collapsing_image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_image3" />
 
-    <Button
-        android:id="@+id/collapsing_fit_system"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="collapsing_fit_system" />
+            <Button
+                android:id="@+id/collapsing_fit_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_fit_system" />
 
-    <Button
-        android:id="@+id/collapsing_image4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="collapsing_image4" />
+            <Button
+                android:id="@+id/collapsing_image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_image4" />
 
-    <Button
-        android:id="@+id/anchor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="anchor" />
+            <Button
+                android:id="@+id/collapsing_image4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_image4_1" />
 
-    <Button
-        android:id="@+id/zhihuplus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="zhihuplus" />
+            <Button
+                android:id="@+id/anchor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="anchor" />
+
+            <Button
+                android:id="@+id/zhihuplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zhihuplus" />
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>
