@@ -104,6 +104,12 @@
                 android:text="collapsing_image4_1" />
 
             <Button
+                android:id="@+id/collapsing_overlap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_overlap" />
+
+            <Button
                 android:id="@+id/anchor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

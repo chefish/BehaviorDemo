@@ -68,6 +68,9 @@
         <activity
             android:name=".collapsing.CollapsFitSystemActivity"
             android:label="CollapsFitSystemActivity"></activity>
+
+        <activity android:name=".collapsing.CollapsImageOverlapActivity"
+            android:label="CollapsImageOverlapActivity"></activity>
     </application>
 
 </manifest>
