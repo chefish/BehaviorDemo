@@ -16,7 +16,9 @@ import android.widget.TextView;
 import com.fish.behaviordemo.R;
 import com.fish.behaviordemo.util.Constant;
 
-
+/**
+ * 参考CoordinatorExamples/FlexibleSpaceExampleActivity
+ */
 public class CollapsImageOverlapActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
 

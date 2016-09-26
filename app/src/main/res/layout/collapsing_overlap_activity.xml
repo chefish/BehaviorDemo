@@ -47,7 +47,8 @@
     <!--关键代码-->
     <android.support.v4.widget.NestedScrollView
         app:behavior_overlapTop="78dp"
-
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
