@@ -57,8 +57,8 @@
             android:name=".anchor.AnchorActivity"
             android:label="AnchorActivity"></activity>
         <activity
-            android:name=".zhihu.ZhihuCplusActivity"
-            android:label="ZhCplusActivity"
+            android:name=".zhihu.ZhihuTopicActivity"
+            android:label="你好C++"
             android:theme="@style/AppThemeBlue"></activity>
         <activity android:name=".collapsing.CollapsImageActivity4"
             android:label="CollapsingImage4"></activity>

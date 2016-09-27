@@ -1,6 +1,7 @@
 package com.fish.behaviordemo.zhihu;
 
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,24 +10,31 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.fish.behaviordemo.R;
+import com.fish.behaviordemo.util.LogUtil;
 
+/**
+ * 仿知乎主题页
+ */
+public class ZhihuTopicActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+    private Toolbar toolbar;
+    private AppBarLayout appbar;
+    private Button attention;
 
-public class ZhihuCplusActivity extends AppCompatActivity {
-    CollapsingToolbarLayout collapsingToolbarLayout;
-    Toolbar toolbar;
-    boolean toolbarPinned;
+    private int mMaxScrollSize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zh_cplus);
+        setContentView(R.layout.zh_topic);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
-
+        attention= (Button) findViewById(R.id.attention);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,6 +56,9 @@ public class ZhihuCplusActivity extends AppCompatActivity {
             tv.setTextSize(40);
             ll.addView(tv);
         }
+
+        appbar = (AppBarLayout) findViewById(R.id.appbar);
+        appbar.addOnOffsetChangedListener(this);
 
     }
 
@@ -74,4 +85,15 @@ public class ZhihuCplusActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+        if (mMaxScrollSize == 0){
+            mMaxScrollSize = appBarLayout.getTotalScrollRange();
+        }
+        int currentScrollPercentage = (Math.abs(verticalOffset)) * 100
+                / mMaxScrollSize;
+        attention.setAlpha((float) (1-currentScrollPercentage/100.0));
+
+
+    }
 }
