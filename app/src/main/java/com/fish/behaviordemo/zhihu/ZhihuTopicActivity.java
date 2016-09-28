@@ -17,14 +17,19 @@ import android.widget.TextView;
 import com.fish.behaviordemo.R;
 import com.fish.behaviordemo.util.LogUtil;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
- * 仿知乎主题页
+ * 仿知乎专题页
  */
 public class ZhihuTopicActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
     private CollapsingToolbarLayout collapsingToolbarLayout;
     private Toolbar toolbar;
     private AppBarLayout appbar;
     private Button attention;
+    private CircleImageView image;
+    private TextView attentionNumTv;
+    private TextView detailTv;
 
     private int mMaxScrollSize;
 
@@ -35,6 +40,9 @@ public class ZhihuTopicActivity extends AppCompatActivity implements AppBarLayou
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
         attention= (Button) findViewById(R.id.attention);
+        image= (CircleImageView) findViewById(R.id.profile_image);
+        attentionNumTv= (TextView) findViewById(R.id.attention_num);
+        detailTv= (TextView) findViewById(R.id.detail);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -92,8 +100,11 @@ public class ZhihuTopicActivity extends AppCompatActivity implements AppBarLayou
         }
         int currentScrollPercentage = (Math.abs(verticalOffset)) * 100
                 / mMaxScrollSize;
-        attention.setAlpha((float) (1-currentScrollPercentage/100.0));
-
+        float alpha=(float) (1 - currentScrollPercentage/100.0);
+        attention.setAlpha(alpha);
+        image.setAlpha(alpha);
+        attentionNumTv.setAlpha(alpha);
+        detailTv.setAlpha(alpha);
 
     }
 }
