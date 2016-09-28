@@ -86,6 +86,12 @@
                 android:text="collapsing_image3" />
 
             <Button
+                android:id="@+id/collapsing_enter_always_coll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="collapsing_enter_always_coll" />
+
+            <Button
                 android:id="@+id/collapsing_fit_system"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -71,6 +71,9 @@
 
         <activity android:name=".collapsing.CollapsImageOverlapActivity"
             android:label="CollapsImageOverlapActivity"></activity>
+
+        <activity android:name=".collapsing.CollapsImageEnterAlwayCollActivity"
+            android:label="CollapsImageEnterAlwayCollActivity"></activity>
     </application>
 
 </manifest>
