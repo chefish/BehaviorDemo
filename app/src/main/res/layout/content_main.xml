@@ -122,10 +122,10 @@
                 android:text="anchor" />
 
             <Button
-                android:id="@+id/zhihuplus"
+                android:id="@+id/zhihu_topic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="zhihuplus" />
+                android:text="zhihu_topic" />
         </LinearLayout>
     </ScrollView>
 

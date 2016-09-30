@@ -15,13 +15,12 @@
         android:background="?attr/colorPrimary"
         android:fitsSystemWindows="true">
 
-        <!--app:expandedTitleGravity="center_horizontal"-->
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbarLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:expandedTitleGravity="center_horizontal"
+            app:expandedTitleGravity="center"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <android.support.v7.widget.Toolbar

@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
         addClick(R.id.anchor, AnchorActivity.class);
 
-        addClick(R.id.zhihuplus, ZhihuTopicActivity.class);
+        addClick(R.id.zhihu_topic, ZhihuTopicActivity.class);
 
 
     }
