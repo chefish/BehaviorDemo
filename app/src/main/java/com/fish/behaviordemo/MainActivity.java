@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
         enterAlwaysCb = (CheckBox) findViewById(R.id.enterAlways);
 
-        findViewById(R.id.fab_snack).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, FabSnackActivity.class);
-                startActivity(intent);
-            }
-        });
+//        findViewById(R.id.fab_snack).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, FabSnackActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         addClick(R.id.fab_snack, FabSnackActivity.class);
         findViewById(R.id.scroll).setOnClickListener(new View.OnClickListener() {

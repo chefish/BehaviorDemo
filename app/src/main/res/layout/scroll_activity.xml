@@ -12,7 +12,6 @@
         android:theme="@style/AppTheme.AppBarOverlay"
         android:layout_height="wrap_content">
 
-        <!--             android:layout_height="?attr/actionBarSize"-->
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             app:popupTheme="@style/AppTheme.PopupOverlay"
