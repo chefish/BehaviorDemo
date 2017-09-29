@@ -15,7 +15,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.fish.behaviordemo.R;
-import com.fish.behaviordemo.util.LogUtil;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
