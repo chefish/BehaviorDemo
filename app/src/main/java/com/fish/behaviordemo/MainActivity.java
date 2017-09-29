@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         appBar = (AppBarLayout) findViewById(R.id.barLayout);
 
+        //add some
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
