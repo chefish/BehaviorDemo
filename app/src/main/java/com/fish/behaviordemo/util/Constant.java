@@ -8,7 +8,7 @@ public class Constant {
             "Dianne Hackborn",
             "Chris Banes",
             "Saul Molinero",
-            "Saul 1"
+            "Saul 2"
     };
 
     public static String getName(int index) {
