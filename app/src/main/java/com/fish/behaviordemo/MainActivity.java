@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     AppBarLayout appBar;
     CheckBox enterAlwaysCb;
+    int x=10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
